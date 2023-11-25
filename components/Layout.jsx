@@ -1,12 +1,9 @@
 import React from "react";
-import Head from "next/Head";
+// import Head from "next/Head";
 
 export default function Layout({ children, title }) {
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
       <header>HOLA MUNDO</header>
       <main>{children}</main>
       <footer>Adios Mundo</footer>
@@ -17,3 +14,6 @@ export default function Layout({ children, title }) {
 Layout.defaultProps = {
     title : "Algun titulo:"
 };
+      {/* <Head>
+        <title>{title}</title>
+      </Head> */}
